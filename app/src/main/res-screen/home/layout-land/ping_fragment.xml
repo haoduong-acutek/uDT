@@ -1,0 +1,28 @@
+<layout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <CheckBox
+            style="@style/focusView" android:padding="10dp"
+            android:layout_width="wrap_content" android:id="@+id/chk_auto_test"
+            android:layout_height="wrap_content" android:button="@drawable/checkbox"
+            android:background="@drawable/view_focus_selector"
+            android:text="Automation test" android:textColor="@color/theme_text_color"
+            android:textSize="@dimen/text_size_26" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="wrap_content"
+            android:id="@+id/rcv_server" android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</layout>
